@@ -10,7 +10,7 @@ coverage
 .pytest_cache/
 .coverage
 htmlcov/
-./src/__tests__/random_tests.test.js
+src/__tests__/random_tests.test.js
 
 
  
