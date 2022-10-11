@@ -2,13 +2,27 @@
 
 # dependencies
 node_modules
+.venv/**
+venv/
 
 # testing
 coverage
+.pytest_cache/
+.coverage
+htmlcov/
+src/__tests__/random_tests.test.js
+
+
+ 
 
 # production
-build
+instance/
+dist/
+build/
+node_modules/**
 
 # misc
+*.pyc
+__pycache__/
 .DS_Store
 npm-debug.log

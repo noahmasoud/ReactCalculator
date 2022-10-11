@@ -3,11 +3,11 @@ import calculate from "../logic/calculate";
 
  
 describe('Number buttons tests', ()=>{
-    test('null, null, null, 4', () => {
+    test('null, null, null, 3', () => {
         expect(calculate({
                 previous: null,
                 current: null,
-                operation: null},"4")).toHaveProperty('current', "4");
+                operation: null},"3")).toHaveProperty('current', "3");
     });
     test('null, 1, null, 1', () => {
         expect(calculate({
