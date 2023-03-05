@@ -18,7 +18,6 @@ src/__tests__/random_tests.test.js
 # production
 instance/
 dist/
-build/
 node_modules/**
 
 # misc
