@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "cs3398bitbucketfirebase"
+  },
+  "targets": {
+    "cs3398bitbucketfirebase": {
+      "hosting": {
+        "calculator": [
+          "CS3398ReactCalculator"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
