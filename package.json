@@ -3,11 +3,17 @@
   "version": "0.1.0",
   "license": "MIT",
   "homepage": "https://cs3398reactcalculator.firebaseapp.com/",
+  "devDependencies": {
+    "gh-pages": "^0.1.0",
+    "prettier": "^1.17.1",
+    "react-scripts": "^5.0.1"
+  },
   "dependencies": {
     "big.js": "^5.2.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "^2.1.8"
+    "react-router-dom": "^6.4.2",
+    "react-scripts": "^5.0.1"
   },
   "scripts": {
     "start": "react-scripts --openssl-legacy-provider start",
