@@ -1,8 +1,8 @@
 {
   "name": "cs3398-react-calculator",
+  "homepage": "https://cs3398reactcalculator.firebaseapp.com/",
   "version": "0.1.0",
   "license": "MIT",
-  "homepage": "https://cs3398reactcalculator.firebaseapp.com/",
   "devDependencies": {
     "gh-pages": "^0.1.0",
     "prettier": "^1.17.1",
