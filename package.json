@@ -2,18 +2,13 @@
   "name": "cs3398-react-calculator",
   "version": "0.1.0",
   "license": "MIT",
-  "homepage": "http://ahfarmer.github.io/calculator",
-  "devDependencies": {
-    "chai": "^4.2.0",
-    "gh-pages": "^0.1.0",
-    "prettier": "^1.17.1",
-    "react-scripts": "^5.0.1"
-  },
+  "homepage": "https://cs3398reactcalculator.firebaseapp.com/",
   "dependencies": {
     "big.js": "^5.2.2",
     "github-fork-ribbon-css": "^0.2.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-scripts": "^2.1.8"
     "react-router-dom": "^6.4.2"
   },
   "scripts": {
@@ -21,7 +16,6 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "deploy": "gh-pages -d build"
   },
   "prettier": {
     "trailingComma": "all"
