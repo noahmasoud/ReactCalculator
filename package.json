@@ -5,20 +5,18 @@
   "homepage": "https://cs3398reactcalculator.firebaseapp.com/",
   "dependencies": {
     "big.js": "^5.2.2",
-    "github-fork-ribbon-css": "^0.2.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "^2.1.8"
-    "react-router-dom": "^6.4.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
+    "start": "react-scripts --openssl-legacy-provider start",
+    "build": "react-scripts --openssl-legacy-provider build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "prettier": {
-    "trailingComma": "all"
+  "eslintConfig": {
+    "extends": "react-app"
   },
   "browserslist": {
     "production": [
