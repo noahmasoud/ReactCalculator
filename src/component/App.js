@@ -1,17 +1,15 @@
+
+// The App component serves as the main container for the application. 
+// It maintains the state for previous, current, and operation 
+
 import React from "react";
-/* Not used
-import {
-    BrowserRouter as Router,
-    Routes,
-    Route,
-    Link
-} from 'react-router-dom';
-*/
+
 import Display from "./Display";
 import ButtonPanel from "./ButtonPanel";
 import calculate from "../logic/calculate";
 import "./App.css";
 
+// state -  holds the values for the previous operand, the current operand, and the operation to perform.
 export default class App extends React.Component {
   state = {
     previous: null,
@@ -19,10 +17,15 @@ export default class App extends React.Component {
     operation: null,
   };
 
+  // handleClick - a method that updates the state based on a button click. It calls the calculate function.
   handleClick = buttonName => {
     this.setState(calculate(this.state, buttonName));
   };
 
+
+  // render - a method that renders a Display component and a ButtonPanel component.
+  // The Display component shows the value of the current operand, or if that's null, the previous operand. If both are null, it shows "0".
+  // The ButtonPanel component takes in this.handleClick as a clickHandler.
   render() {
     return (
       <div className="component-app">
