@@ -33,6 +33,7 @@ export default class Button extends React.Component {
       this.props.wide ? "wide" : "",
     ];
 
+    // The join(" ").trim() will make the CSS work well for formatting.
     return (
       <div className={className.join(" ").trim()}>
         <button onClick={this.handleClick}>{this.props.name}</button>
