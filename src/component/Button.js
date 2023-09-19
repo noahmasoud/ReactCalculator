@@ -22,7 +22,7 @@ export default class Button extends React.Component {
   // This function is passed from the parent (ButtonPanel) to this button, and eventually, 
   // it invokes the handleClick method defined in the App component.
 
-  handleClick = () => {
+  iAmClicked = () => {
     this.props.clickHandler(this.props.name);
   };
 
@@ -33,10 +33,10 @@ export default class Button extends React.Component {
       this.props.wide ? "wide" : "",
     ];
 
-    // The join(" ").trim() will make the CSS work well for formatting.
+    // The join(" ").trim()
     return (
       <div className={className.join(" ").trim()}>
-        <button onClick={this.handleClick}>{this.props.name}</button>
+        <button onClick={this.iAmClicked}>{this.props.name}</button>
       </div>
     );
   }

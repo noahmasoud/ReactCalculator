@@ -13,6 +13,7 @@ export default class ButtonPanel extends React.Component {
 
   // This method is a handler that gets called when a button is clicked. 
   // It calls the clickHandler function passed in via props.
+  // buttonClicked is a ButtonPanel prop
   buttonClicked = buttonName => {
     this.props.clickHandler(buttonName);
   };
