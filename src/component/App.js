@@ -25,7 +25,8 @@ export default class App extends React.Component {
 
   // render - a method that renders a Display component and a ButtonPanel component.
   // The Display component shows the value of the current operand, or if that's null, the previous operand. If both are null, it shows "0".
-  // The ButtonPanel component takes in this.handleClick as a clickHandler.
+  // The ButtonPanel component sets the value of clickHandler to the value of this.handleClick.
+  // It includes an (implicit) argument of buttonName.
   render() {
     return (
       <div className="component-app">
