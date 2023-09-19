@@ -5,14 +5,25 @@ import PropTypes from "prop-types";
 import "./ButtonPanel.css";
 
 export default class ButtonPanel extends React.Component {
+  // The propTypes is a debugging aid, checking that the 
+  // clickHandler prop is a function.
   static propTypes = {
     clickHandler: PropTypes.func,
   };
 
+  // This method is a handler that gets called when a button is clicked. 
+  // It calls the clickHandler function passed in via props.
   handleClick = buttonName => {
     this.props.clickHandler(buttonName);
   };
 
+  // The ButtonPanel class overrides the inhertied method render() from React.Component.
+  // This method defines how the component should be rendered on the screen. 
+  // It's creating a grid of buttons using the <Button /> component.
+
+  // Each Button component is passed a name and a clickHandler.
+  // Some buttons have an additional orange property to signify a styling choice.
+  // The button with the name "0" has a wide property for styling as well.
   render() {
     return (
       <div className="component-button-panel">
