@@ -13,7 +13,7 @@ export default class ButtonPanel extends React.Component {
 
   // This method is a handler that gets called when a button is clicked. 
   // It calls the clickHandler function passed in via props.
-  handleClick = buttonName => {
+  buttonClicked = buttonName => {
     this.props.clickHandler(buttonName);
   };
 
@@ -28,33 +28,33 @@ export default class ButtonPanel extends React.Component {
     return (
       <div className="component-button-panel">
         <div>
-          <Button name="AC" clickHandler={this.handleClick} />
-          <Button name="+/-" clickHandler={this.handleClick} />
-          <Button name="%" clickHandler={this.handleClick} />
-          <Button name="÷" clickHandler={this.handleClick} orange />
+          <Button name="AC" clickHandler={this.buttonClicked} />
+          <Button name="+/-" clickHandler={this.buttonClicked} />
+          <Button name="%" clickHandler={this.buttonClicked} />
+          <Button name="÷" clickHandler={this.buttonClicked} orange />
         </div>
         <div>
-          <Button name="7" clickHandler={this.handleClick} />
-          <Button name="8" clickHandler={this.handleClick} />
-          <Button name="9" clickHandler={this.handleClick} />
-          <Button name="x" clickHandler={this.handleClick} orange />
+          <Button name="7" clickHandler={this.buttonClicked} />
+          <Button name="8" clickHandler={this.buttonClicked} />
+          <Button name="9" clickHandler={this.buttonClicked} />
+          <Button name="x" clickHandler={this.buttonClicked} orange />
         </div>
         <div>
-          <Button name="4" clickHandler={this.handleClick} />
-          <Button name="5" clickHandler={this.handleClick} />
-          <Button name="6" clickHandler={this.handleClick} />
-          <Button name="-" clickHandler={this.handleClick} orange />
+          <Button name="4" clickHandler={this.buttonClicked} />
+          <Button name="5" clickHandler={this.buttonClicked} />
+          <Button name="6" clickHandler={this.buttonClicked} />
+          <Button name="-" clickHandler={this.buttonClicked} orange />
         </div>
         <div>
-          <Button name="1" clickHandler={this.handleClick} />
-          <Button name="2" clickHandler={this.handleClick} />
-          <Button name="3" clickHandler={this.handleClick} />
-          <Button name="+" clickHandler={this.handleClick} orange />
+          <Button name="1" clickHandler={this.buttonClicked} />
+          <Button name="2" clickHandler={this.buttonClicked} />
+          <Button name="3" clickHandler={this.buttonClicked} />
+          <Button name="+" clickHandler={this.buttonClicked} orange />
         </div>
         <div>
-          <Button name="0" clickHandler={this.handleClick} wide  />
-          <Button name="." clickHandler={this.handleClick} />
-          <Button name="=" clickHandler={this.handleClick} orange />
+          <Button name="0" clickHandler={this.buttonClicked} wide  />
+          <Button name="." clickHandler={this.buttonClicked} />
+          <Button name="=" clickHandler={this.buttonClicked} orange />
         </div>
       </div>
     );
