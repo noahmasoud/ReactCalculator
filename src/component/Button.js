@@ -33,7 +33,7 @@ export default class Button extends React.Component {
       this.props.wide ? "wide" : "",
     ];
 
-    // The join(" ").trim()
+    // The join(" ").trim() all the css to be access correctly. 
     return (
       <div className={className.join(" ").trim()}>
         <button onClick={this.iAmClicked}>{this.props.name}</button>
